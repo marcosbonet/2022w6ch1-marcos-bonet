@@ -1,10 +1,10 @@
 import { createReducer } from '@reduxjs/toolkit';
-import { Task } from '../models/task';
+import { Characters } from '../models/types';
 import * as ac from './action.creators';
 
-const initialState: Array<Task> = [];
+const initialState: Array<Characters> = [];
 
-export const taskReducer = createReducer(initialState, (builder) => {
+export const characterReducer = createReducer(initialState, (builder) => {
     builder.addCase(ac.loadActionCreator, (_state, action) => action.payload);
     builder.addCase(ac.addActionCreator, (state, action) => [
         ...state,

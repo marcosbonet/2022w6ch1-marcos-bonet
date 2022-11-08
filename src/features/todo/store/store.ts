@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { taskReducer } from '../../features/todo/reducer/reducer';
+
+import { characterReducer } from '../my.reducer/reducer';
 
 export const appStore = configureStore({
     reducer: {
-        tasks: taskReducer,
+        character: characterReducer,
     },
 });
 

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { rootState } from '../../../../infrastructure/store/store';
+import { rootState } from '../../store/store';
 import * as ac from '../../reducer/action.creators';
 
 export function Sample() {
