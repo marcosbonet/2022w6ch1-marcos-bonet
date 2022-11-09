@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
-import { App } from './App./app';
+import { App } from './component/App./app';
 import './index.css';
-import { appStore } from './features/todo/store/store';
+import { appStore } from './store/store';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
