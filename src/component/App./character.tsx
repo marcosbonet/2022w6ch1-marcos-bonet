@@ -1,26 +1,24 @@
 import { Characters } from '../../models/data/types';
 
-export function Card({ characters }: { characters: Characters }) {
+export function Card({ item }: { item: Characters }) {
     return (
         <>
             <li className="character col">
                 <div className="card character__card">
                     <img
-                        src={
-                            './assets/' + characters.name.toLowerCase() + '.jpg'
-                        }
+                        src={'./assets/' + item.name.toLowerCase() + '.jpg'}
                         alt="Nombre y familia del personaje"
                         className="character__picture card-img-top"
                     />
                     <div className="card-body">
                         <h2 className="character__name card-title h4">
-                            {characters.name}
+                            {item.name}
                         </h2>
                         <div className="character__info">
                             <ul className="list-unstyled">
-                                <li> {characters.age} años</li>
+                                <li> {item.age} años</li>
                                 <li>
-                                    {characters.lifeStatus}
+                                    {item.lifeStatus}
                                     <i className="fas fa-thumbs-down"></i>
                                     <i className="fas fa-thumbs-up"></i>
                                 </li>
